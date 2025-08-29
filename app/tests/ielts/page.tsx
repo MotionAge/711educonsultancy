@@ -109,7 +109,7 @@ export default function IELTSPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="text-lg px-8">
-                  Enroll in IELTS Course
+                  <Link href="/contact">Get your IELTS Course</Link>
                 </Button>
               </div>
             </div>

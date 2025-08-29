@@ -156,7 +156,7 @@ export default function PTEPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="text-lg px-8">
-                  Enroll in PTE Course
+                  <Link href="/contact">Get your PTE Course</Link>
                 </Button>
               </div>
             </div>
