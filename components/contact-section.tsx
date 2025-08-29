@@ -218,9 +218,7 @@ export function ContactSection() {
           <div>
             <h3 className="font-semibold mb-2">Email Address</h3>
             <p className="text-muted-foreground">
-              info@7eleveneducation.com
-              <br />
-              support@7eleveneducation.com
+              info.seveneleveneduconsultancy@gmail.com
             </p>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
+import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react"
+import { FaTiktok } from "react-icons/fa"
 
 export function Footer() {
   return (
@@ -14,14 +15,14 @@ export function Footer() {
               abroad.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-secondary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61579023196710" target="_blank" className="hover:text-secondary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="hover:text-secondary transition-colors">
+              <a href="https://www.instagram.com/7eleveneducationconsultancy" target="_blank" className="hover:text-secondary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="hover:text-secondary transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="https://www.tiktok.com/@7eleveneduconsultancy" target="_blank" className="hover:text-secondary transition-colors">
+                 <FaTiktok className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -111,7 +112,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>info@7eleveneducation.com</span>
+                <span>info.seveneleveneduconsultancy@gmail.com</span>
               </div>
             </div>
             <div className="mt-6">

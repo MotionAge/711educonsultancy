@@ -43,14 +43,11 @@ export const metadata: Metadata = {
       },
     ],
   },
-  // twitter: {
-  //   card: "summary_large_image",
-  //   title: "7 Eleven Education Consultancy - Study Abroad Experts",
-  //   description:
-  //     "Guiding Nepali students to study abroad in Australia, USA, UK, Canada, and New Zealand. Get expert university and visa guidance.",
-  //   images: ["https://yourwebsite.com/og-image.png"],
-  //   creator: "@7ElevenEdu",
-  // },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -61,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
-              <TopNav />
+      <TopNav />
       <MainNav />
         {children}
       </body>
