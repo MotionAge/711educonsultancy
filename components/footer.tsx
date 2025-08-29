@@ -8,7 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">7 Eleven Education</h3>
+            <h3 className="text-xl font-bold mb-4">7 Eleven Education Consultancy</h3>
             <p className="text-primary-foreground/80 mb-4 text-pretty">
               Your trusted partner for international education. We help Nepali students achieve their dreams of studying
               abroad.
@@ -101,11 +101,13 @@ export function Footer() {
             <div className="space-y-3 text-primary-foreground/80">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span>Putalisadak, Kathmandu, Nepal</span>
+                <span>Suryabinayak Bus Stop,Bhaktapur, Nepal</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>+977-1-4567890</span>
+                 +977-1-5929711
+              <br />
+              +977-9764774577
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
@@ -141,7 +143,8 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/80">
-          <p>&copy; 2024 7 Eleven Education Consultancy. All rights reserved.</p>
+          <p>&copy; 2025 7 Eleven Education Consultancy. All rights reserved.</p>
+          <p><a href="http://motionage.com/">Made By Motion Age</a></p>
         </div>
       </div>
     </footer>

@@ -1,5 +1,3 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -47,8 +45,6 @@ export default function CareerCounselingPage() {
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -63,12 +59,12 @@ export default function CareerCounselingPage() {
                 interests, skills, and future aspirations in the global job market.
               </p>
               <Button size="lg" className="text-lg px-8">
-                Start Career Planning
+                <Link href="/contact">Start Career Planning</Link>
               </Button>
             </div>
             <div className="relative h-96">
               <Image
-                src="/career-counselor-meeting-with-student.png"
+                src="https://images.unsplash.com/photo-1644329901831-1334e813c6bd?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Career counseling session"
                 fill
                 className="object-cover rounded-lg"
@@ -146,14 +142,7 @@ export default function CareerCounselingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Book Counseling Session
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <Link href="/contact">Get Free Consultation</Link>
+              <Link href="/contact"> Book Your Session</Link>
             </Button>
           </div>
         </div>

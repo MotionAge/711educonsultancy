@@ -1,11 +1,9 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { ContactSection } from "@/components/contact-section"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { MapPin, Phone, Mail, Clock, Users, Award, CheckCircle } from "lucide-react"
-import Image from "next/image"
+import { Users, Award, CheckCircle } from "lucide-react"
+import { MapSection } from "@/components/map-section"
 
 export default function ContactPage() {
   const whyChooseUs = [
@@ -26,27 +24,9 @@ export default function ContactPage() {
     },
   ]
 
-  const officeLocations = [
-    {
-      name: "Main Office",
-      address: "Putalisadak, Kathmandu, Nepal",
-      phone: "+977-1-4567890",
-      email: "info@7eleveneducation.com",
-      hours: "Sunday - Friday: 9:00 AM - 6:00 PM",
-    },
-    {
-      name: "Branch Office",
-      address: "New Baneshwor, Kathmandu, Nepal",
-      phone: "+977-1-4567891",
-      email: "branch@7eleveneducation.com",
-      hours: "Sunday - Friday: 10:00 AM - 5:00 PM",
-    },
-  ]
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -102,82 +82,8 @@ export default function ContactPage() {
       {/* Contact Form Section */}
       <ContactSection />
 
-      {/* Office Locations */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Visit Our Offices</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              We have multiple locations to serve you better. Visit us for in-person consultations and guidance
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {officeLocations.map((office, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <CardTitle className="text-xl flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-secondary" />
-                    {office.name}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <MapPin className="h-4 w-4 text-muted-foreground mt-1 flex-shrink-0" />
-                    <p className="text-muted-foreground">{office.address}</p>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Phone className="h-4 w-4 text-muted-foreground flex-shrink-0" />
-                    <p className="text-muted-foreground">{office.phone}</p>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="h-4 w-4 text-muted-foreground flex-shrink-0" />
-                    <p className="text-muted-foreground">{office.email}</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Clock className="h-4 w-4 text-muted-foreground mt-1 flex-shrink-0" />
-                    <p className="text-muted-foreground">{office.hours}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Map Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Find Us on Map</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Located in the heart of Kathmandu, we're easily accessible by public transport
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <Card>
-              <CardContent className="p-0">
-                <div className="relative h-96 bg-muted/50 rounded-lg overflow-hidden">
-                  <Image
-                    src="/kathmandu-office-location-map.png"
-                    alt="7 Eleven Education Office Location Map"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-lg p-6 text-center">
-                      <MapPin className="h-8 w-8 text-secondary mx-auto mb-2" />
-                      <h3 className="font-semibold text-primary mb-1">7 Eleven Education</h3>
-                      <p className="text-sm text-muted-foreground">Putalisadak, Kathmandu</p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      <MapSection />
 
       {/* FAQ Section */}
       <section className="py-16 bg-white">

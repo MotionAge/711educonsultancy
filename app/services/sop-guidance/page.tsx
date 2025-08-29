@@ -1,5 +1,3 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -67,9 +65,6 @@ export default function SOPGuidancePage() {
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
-
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
@@ -81,12 +76,12 @@ export default function SOPGuidancePage() {
                 Our expert writers help you create SOPs that stand out to admission committees.
               </p>
               <Button size="lg" className="text-lg px-8">
-                Start Writing Your SOP
+                <Link href="/contact">Start writing your SOP</Link>
               </Button>
             </div>
             <div className="relative h-96">
               <Image
-                src="/student-writing-statement-of-purpose-laptop.png"
+                src="https://images.unsplash.com/photo-1580127645995-d43fe9598711?q=80&w=1181&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Writing Statement of Purpose"
                 fill
                 className="object-cover rounded-lg"
@@ -200,19 +195,11 @@ export default function SOPGuidancePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Get SOP Writing Help
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <Link href="/contact">Free SOP Review</Link>
+              <Link href="/contact"> Get SOP writing Help</Link>
             </Button>
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   )

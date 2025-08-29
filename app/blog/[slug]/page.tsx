@@ -1,5 +1,3 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -68,10 +66,10 @@ const blogPosts = {
       <p>Studying in the USA is a life-changing experience that opens doors to global opportunities. With proper planning and preparation, you can make your American dream a reality.</p>
     `,
     author: "Dr. Rajesh Sharma",
-    date: "2024-01-15",
+    date: "2025-01-15",
     readTime: "12 min read",
     category: "Study Abroad",
-    image: "/usa-university-campus-students.png",
+    image: "/american-university-campus-with-students.png",
     tags: ["USA", "Study Abroad", "University", "Student Visa"],
   },
   "ielts-vs-pte-comparison": {
@@ -132,10 +130,10 @@ const blogPosts = {
       <p>Both IELTS and PTE are excellent tests that serve the same purpose. Your choice should depend on your personal preferences, target universities' requirements, and your comfort level with different test formats.</p>
     `,
     author: "Priya Thapa",
-    date: "2024-01-12",
+    date: "2025-01-12",
     readTime: "8 min read",
     category: "Test Preparation",
-    image: "/students-comparing-english-tests.png",
+    image: "/students-taking-english-proficiency-test.png",
     tags: ["IELTS", "PTE", "English Test", "Test Preparation"],
   },
 }
@@ -147,31 +145,29 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     notFound()
   }
 
-  const relatedPosts = [
-    {
-      id: "student-visa-application-tips",
-      title: "10 Essential Tips for a Successful Student Visa Application",
-      image: "/student-visa-application-process.png",
-      category: "Visa Guidance",
-    },
-    {
-      id: "scholarship-opportunities-2024",
-      title: "Top Scholarship Opportunities for Nepali Students in 2024",
-      image: "/scholarship-celebration-students.png",
-      category: "Scholarships",
-    },
-    {
-      id: "sop-writing-masterclass",
-      title: "SOP Writing Masterclass: How to Write a Winning Statement",
-      image: "/student-writing-sop-statement.png",
-      category: "Application Tips",
-    },
-  ]
+  // const relatedPosts = [
+  //   {
+  //     id: "student-visa-application-tips",
+  //     title: "10 Essential Tips for a Successful Student Visa Application",
+  //     image: "/student-visa-application-process.png",
+  //     category: "Visa Guidance",
+  //   },
+  //   {
+  //     id: "scholarship-opportunities-2025",
+  //     title: "Top Scholarship Opportunities for Nepali Students in 2025",
+  //     image: "/scholarship-celebration-students.png",
+  //     category: "Scholarships",
+  //   },
+  //   {
+  //     id: "sop-writing-masterclass",
+  //     title: "SOP Writing Masterclass: How to Write a Winning Statement",
+  //     image: "/student-writing-sop-statement.png",
+  //     category: "Application Tips",
+  //   },
+  // ]
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
 
       {/* Article Header */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -207,10 +203,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             <p className="text-lg text-muted-foreground mb-8 text-pretty">{post.excerpt}</p>
 
             <div className="flex items-center gap-4">
-              <Button variant="outline" size="sm">
+              {/* <Button variant="outline" size="sm">
                 <Share2 className="mr-2 h-4 w-4" />
                 Share Article
-              </Button>
+              </Button> */}
               <div className="flex gap-2">
                 {post.tags.map((tag) => (
                   <Badge key={tag} variant="outline" className="text-xs">
@@ -347,7 +343,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Related Posts */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold text-primary mb-8">Related Articles</h2>
@@ -377,7 +373,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

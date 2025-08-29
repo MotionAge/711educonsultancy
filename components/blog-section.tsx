@@ -6,26 +6,26 @@ import Image from "next/image"
 
 const blogPosts = [
   {
-    title: "Top 10 Universities in USA for International Students",
+    title: "Complete Guide to Studying in the USA: Everything You Need to Know",
     description:
-      "Discover the best American universities that welcome international students with excellent programs and support systems.",
-    image: "/american-university-campus-with-diverse-students.png",
-    date: "2024-01-15",
-    href: "/blog/top-universities-usa",
+      "From choosing the right university to visa applications, this comprehensive guide covers everything Nepali students need to know about studying in the United States.",
+    image: "/american-university-campus-with-students.png",
+    date: "2025-01-15",
+    href: "/blog/complete-guide-studying-usa",
   },
   {
     title: "IELTS vs PTE: Which Test Should You Choose?",
     description:
       "A comprehensive comparison of IELTS and PTE tests to help you make the right choice for your study abroad journey.",
     image: "/students-taking-english-proficiency-test.png",
-    date: "2024-01-10",
-    href: "/blog/ielts-vs-pte",
+    date: "2025-01-10",
+    href: "/blog/ielts-vs-pte-comparison",
   },
   {
     title: "Scholarship Opportunities for Nepali Students",
     description: "Explore various scholarship programs available for Nepali students planning to study abroad.",
     image: "/graduation-cap-with-scholarship-certificate.png",
-    date: "2024-01-05",
+    date: "2025-01-05",
     href: "/blog/scholarships-nepali-students",
   },
 ]

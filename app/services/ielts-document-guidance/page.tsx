@@ -1,5 +1,3 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -59,8 +57,6 @@ export default function IELTSDocumentGuidancePage() {
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -73,12 +69,12 @@ export default function IELTSDocumentGuidancePage() {
                 through every step of the IELTS process to ensure you meet all university requirements.
               </p>
               <Button size="lg" className="text-lg px-8">
-                Get IELTS Guidance
+                <Link href="/contact">Get IELTS Guide</Link>
               </Button>
             </div>
             <div className="relative h-96">
               <Image
-                src="/ielts-test-preparation-materials-books.png"
+                src="https://plus.unsplash.com/premium_photo-1745835774540-3b9a76cce838?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="IELTS preparation materials"
                 fill
                 className="object-cover rounded-lg"
@@ -191,14 +187,7 @@ export default function IELTSDocumentGuidancePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Start IELTS Preparation
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <Link href="/contact">Get Free Assessment</Link>
+              <Link href="/contact"> Start IELTS Preparation</Link>
             </Button>
           </div>
         </div>

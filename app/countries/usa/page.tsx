@@ -1,5 +1,3 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -63,8 +61,6 @@ export default function USAPage() {
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -84,11 +80,9 @@ export default function USAPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="text-lg px-8">
-                  Start Your USA Journey
+                 <Link href="/contact">Start Your USA Journey</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-                  Download USA Guide
-                </Button>
+
               </div>
             </div>
             <div className="relative h-96">
@@ -299,9 +293,6 @@ export default function USAPage() {
             every step of the application process.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              Book Free Consultation
-            </Button>
             <Button
               size="lg"
               variant="outline"

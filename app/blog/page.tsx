@@ -1,11 +1,8 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Calendar, Clock, User, Search, ArrowRight } from "lucide-react"
+import { Calendar, Clock, User, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -16,10 +13,10 @@ export default function BlogPage() {
     excerpt:
       "From choosing the right university to visa applications, this comprehensive guide covers everything Nepali students need to know about studying in the United States.",
     author: "Dr. Rajesh Sharma",
-    date: "2024-01-15",
+    date: "2025-01-15",
     readTime: "12 min read",
     category: "Study Abroad",
-    image: "/usa-university-campus-students.png",
+    image: "/american-university-campus-with-diverse-students.png",
     featured: true,
   }
 
@@ -30,32 +27,32 @@ export default function BlogPage() {
       excerpt:
         "A detailed comparison of IELTS and PTE Academic tests to help you decide which one is better for your study abroad goals.",
       author: "Priya Thapa",
-      date: "2024-01-12",
+      date: "2025-01-12",
       readTime: "8 min read",
       category: "Test Preparation",
-      image: "/students-comparing-english-tests.png",
+      image: "/students-taking-english-proficiency-test.png",
     },
+    // {
+    //   id: "student-visa-application-tips",
+    //   title: "10 Essential Tips for a Successful Student Visa Application",
+    //   excerpt:
+    //     "Learn the insider secrets to increase your chances of getting your student visa approved on the first try.",
+    //   author: "Amit Gurung",
+    //   date: "2025-01-10",
+    //   readTime: "6 min read",
+    //   category: "Visa Guidance",
+    //   image: "/student-visa-application-process.png",
+    // },
     {
-      id: "student-visa-application-tips",
-      title: "10 Essential Tips for a Successful Student Visa Application",
-      excerpt:
-        "Learn the insider secrets to increase your chances of getting your student visa approved on the first try.",
-      author: "Amit Gurung",
-      date: "2024-01-10",
-      readTime: "6 min read",
-      category: "Visa Guidance",
-      image: "/student-visa-application-process.png",
-    },
-    {
-      id: "scholarship-opportunities-2024",
-      title: "Top Scholarship Opportunities for Nepali Students in 2024",
+      id: "scholarship-opportunities-2025",
+      title: "Top Scholarship Opportunities for Nepali Students in 2025",
       excerpt:
         "Discover the best scholarship programs available for Nepali students planning to study abroad this year.",
       author: "Sita Rai",
-      date: "2024-01-08",
+      date: "2025-01-08",
       readTime: "10 min read",
       category: "Scholarships",
-      image: "/scholarship-celebration-students.png",
+      image: "/graduation-cap-with-scholarship-certificate.png",
     },
     {
       id: "canada-study-permit-guide",
@@ -63,49 +60,37 @@ export default function BlogPage() {
       excerpt:
         "Everything you need to know about applying for a Canadian study permit, including required documents and processing times.",
       author: "Binod Shrestha",
-      date: "2024-01-05",
+      date: "2025-01-05",
       readTime: "9 min read",
       category: "Study Abroad",
-      image: "/canada-study-permit-documents.png",
+      image: "/canada-flag-with-modern-university-campus.png",
     },
-    {
-      id: "sop-writing-masterclass",
-      title: "SOP Writing Masterclass: How to Write a Winning Statement",
-      excerpt:
-        "Master the art of writing compelling Statements of Purpose that get you accepted into your dream university.",
-      author: "Dr. Rajesh Sharma",
-      date: "2024-01-03",
-      readTime: "11 min read",
-      category: "Application Tips",
-      image: "/student-writing-sop-statement.png",
-    },
-    {
-      id: "uk-universities-ranking-2024",
-      title: "Top UK Universities for International Students in 2024",
-      excerpt:
-        "Explore the best UK universities that welcome international students with excellent programs and support services.",
-      author: "Meera Poudel",
-      date: "2024-01-01",
-      readTime: "7 min read",
-      category: "Study Abroad",
-      image: "/uk-university-international-students.png",
-    },
-  ]
-
-  const categories = [
-    { name: "Study Abroad", count: 15 },
-    { name: "Test Preparation", count: 12 },
-    { name: "Visa Guidance", count: 8 },
-    { name: "Scholarships", count: 6 },
-    { name: "Application Tips", count: 10 },
-    { name: "Career Guidance", count: 5 },
+    // {
+    //   id: "sop-writing-masterclass",
+    //   title: "SOP Writing Masterclass: How to Write a Winning Statement",
+    //   excerpt:
+    //     "Master the art of writing compelling Statements of Purpose that get you accepted into your dream university.",
+    //   author: "Dr. Rajesh Sharma",
+    //   date: "2025-01-03",
+    //   readTime: "11 min read",
+    //   category: "Application Tips",
+    //   image: "/student-writing-sop-statement.png",
+    // },
+    // {
+    //   id: "uk-universities-ranking-2025",
+    //   title: "Top UK Universities for International Students in 2025",
+    //   excerpt:
+    //     "Explore the best UK universities that welcome international students with excellent programs and support services.",
+    //   author: "Meera Poudel",
+    //   date: "2025-01-01",
+    //   readTime: "7 min read",
+    //   category: "Study Abroad",
+    //   image: "/uk-university-international-students.png",
+    // },
   ]
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
-
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
@@ -117,10 +102,6 @@ export default function BlogPage() {
               Stay updated with the latest information about studying abroad, test preparation, visa guidance, and more.
               Expert insights to help you make informed decisions about your educational journey.
             </p>
-            <div className="relative max-w-md mx-auto">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-              <Input placeholder="Search articles..." className="pl-10 pr-4 py-3 text-base" />
-            </div>
           </div>
         </div>
       </section>
@@ -181,7 +162,7 @@ export default function BlogPage() {
       {/* Blog Posts Grid */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div className="space-y-8">
             {/* Main Content */}
             <div className="lg:col-span-3">
               <h2 className="text-2xl font-bold text-primary mb-8">Recent Articles</h2>
@@ -241,82 +222,6 @@ export default function BlogPage() {
                 <Button variant="outline" size="lg">
                   Load More Articles
                 </Button>
-              </div>
-            </div>
-
-            {/* Sidebar */}
-            <div className="lg:col-span-1">
-              <div className="space-y-8">
-                {/* Categories */}
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-lg">Categories</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-3">
-                      {categories.map((category) => (
-                        <div key={category.name} className="flex items-center justify-between">
-                          <Link
-                            href={`/blog/category/${category.name.toLowerCase().replace(" ", "-")}`}
-                            className="text-sm hover:text-secondary transition-colors"
-                          >
-                            {category.name}
-                          </Link>
-                          <Badge variant="secondary" className="text-xs">
-                            {category.count}
-                          </Badge>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Newsletter Signup */}
-                <Card className="bg-secondary/5">
-                  <CardHeader>
-                    <CardTitle className="text-lg">Stay Updated</CardTitle>
-                    <CardDescription>Get the latest education insights delivered to your inbox</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <Input placeholder="Your email address" type="email" />
-                    <Button className="w-full">Subscribe</Button>
-                  </CardContent>
-                </Card>
-
-                {/* Popular Posts */}
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-lg">Popular Posts</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      {blogPosts.slice(0, 3).map((post) => (
-                        <div key={post.id} className="flex gap-3">
-                          <div className="relative w-16 h-16 flex-shrink-0">
-                            <Image
-                              src={post.image || "/placeholder.svg"}
-                              alt={post.title}
-                              fill
-                              className="object-cover rounded"
-                            />
-                          </div>
-                          <div>
-                            <Link
-                              href={`/blog/${post.id}`}
-                              className="text-sm font-medium hover:text-secondary transition-colors line-clamp-2"
-                            >
-                              {post.title}
-                            </Link>
-                            <div className="flex items-center gap-2 text-xs text-muted-foreground mt-1">
-                              <Calendar className="h-3 w-3" />
-                              <span>{new Date(post.date).toLocaleDateString()}</span>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
               </div>
             </div>
           </div>

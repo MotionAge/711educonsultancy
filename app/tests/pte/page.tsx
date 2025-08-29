@@ -1,5 +1,3 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -135,8 +133,6 @@ export default function PTEPage() {
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -162,14 +158,11 @@ export default function PTEPage() {
                 <Button size="lg" className="text-lg px-8">
                   Enroll in PTE Course
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-                  Take Free Mock Test
-                </Button>
               </div>
             </div>
             <div className="relative h-96">
               <Image
-                src="/students-taking-pte-computer-based-exam.png"
+                src="https://cdn.pixabay.com/photo/2024/01/18/10/37/letter-tiles-8516698_1280.jpg"
                 alt="PTE computer-based exam"
                 fill
                 className="object-cover rounded-lg"
@@ -324,10 +317,7 @@ export default function PTEPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Our PTE Course Highlights</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Specialized training program designed for PTE Academic success
-            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">PTE Course Highlights</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -345,119 +335,6 @@ export default function PTEPage() {
         </div>
       </section>
 
-      {/* Course Packages */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">PTE Course Packages</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Choose the perfect package for your PTE preparation needs
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <Badge variant="outline" className="w-fit mx-auto mb-2">
-                  Essential
-                </Badge>
-                <CardTitle className="text-2xl">PTE Foundation</CardTitle>
-                <CardDescription>Perfect for beginners</CardDescription>
-                <div className="text-3xl font-bold text-primary mt-4">NPR 18,000</div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">6 weeks comprehensive training</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Computer-based practice</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">3 mock tests</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Study materials included</span>
-                  </li>
-                </ul>
-                <Button className="w-full">Choose Foundation</Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow duration-300 border-secondary">
-              <CardHeader className="text-center">
-                <Badge variant="secondary" className="w-fit mx-auto mb-2">
-                  Recommended
-                </Badge>
-                <CardTitle className="text-2xl">PTE Mastery</CardTitle>
-                <CardDescription>Complete preparation package</CardDescription>
-                <div className="text-3xl font-bold text-primary mt-4">NPR 28,000</div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">10 weeks intensive training</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">AI-powered practice platform</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">6 mock tests</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Individual feedback sessions</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Score guarantee program</span>
-                  </li>
-                </ul>
-                <Button className="w-full">Choose Mastery</Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <Badge variant="outline" className="w-fit mx-auto mb-2">
-                  Express
-                </Badge>
-                <CardTitle className="text-2xl">PTE Sprint</CardTitle>
-                <CardDescription>Quick preparation</CardDescription>
-                <div className="text-3xl font-bold text-primary mt-4">NPR 22,000</div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">3 weeks intensive training</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Daily practice sessions</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">4 mock tests</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Template-based strategies</span>
-                  </li>
-                </ul>
-                <Button className="w-full">Choose Sprint</Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
@@ -469,14 +346,7 @@ export default function PTEPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Book Free Consultation
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <Link href="/contact">Download PTE Guide</Link>
+             <Link href="/contact">Book Consultation</Link>
             </Button>
           </div>
         </div>

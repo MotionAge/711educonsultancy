@@ -1,5 +1,3 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -49,8 +47,6 @@ export default function ScholarAssistancePage() {
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -64,12 +60,12 @@ export default function ScholarAssistancePage() {
                 costs.
               </p>
               <Button size="lg" className="text-lg px-8">
-                Find Scholarships
+                <Link href="/contact"> Find Scholorship</Link>
               </Button>
             </div>
             <div className="relative h-96">
               <Image
-                src="/student-receiving-scholarship-award-ceremony.png"
+                src="/graduation-cap-with-scholarship-certificate.png"
                 alt="Scholarship assistance"
                 fill
                 className="object-cover rounded-lg"
@@ -183,14 +179,7 @@ export default function ScholarAssistancePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Get Scholarship Consultation
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <Link href="/contact">Contact Our Experts</Link>
+              <Link href="/contact"> Find Scholorship</Link>
             </Button>
           </div>
         </div>

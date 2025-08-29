@@ -1,5 +1,3 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -90,8 +88,6 @@ export default function IELTSPage() {
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -115,14 +111,11 @@ export default function IELTSPage() {
                 <Button size="lg" className="text-lg px-8">
                   Enroll in IELTS Course
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-                  Take Free Mock Test
-                </Button>
               </div>
             </div>
             <div className="relative h-96">
               <Image
-                src="/students-taking-ielts-exam-preparation.png"
+                src="https://images.pexels.com/photos/5649423/pexels-photo-5649423.jpeg"
                 alt="IELTS exam preparation"
                 fill
                 className="object-cover rounded-lg"
@@ -247,7 +240,7 @@ export default function IELTSPage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Our IELTS Course Features</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">IELTS Course Features</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
               Comprehensive preparation program designed to maximize your IELTS score
             </p>
@@ -268,120 +261,6 @@ export default function IELTSPage() {
         </div>
       </section>
 
-      {/* Course Packages */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Course Packages</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Choose the package that best fits your preparation needs and timeline
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <Badge variant="outline" className="w-fit mx-auto mb-2">
-                  Basic
-                </Badge>
-                <CardTitle className="text-2xl">Foundation Course</CardTitle>
-                <CardDescription>Perfect for beginners</CardDescription>
-                <div className="text-3xl font-bold text-primary mt-4">NPR 15,000</div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">4 weeks intensive training</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">All 4 skills coverage</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">2 mock tests</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Study materials included</span>
-                  </li>
-                </ul>
-                <Button className="w-full">Choose Basic</Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow duration-300 border-secondary">
-              <CardHeader className="text-center">
-                <Badge variant="secondary" className="w-fit mx-auto mb-2">
-                  Popular
-                </Badge>
-                <CardTitle className="text-2xl">Premium Course</CardTitle>
-                <CardDescription>Most comprehensive package</CardDescription>
-                <div className="text-3xl font-bold text-primary mt-4">NPR 25,000</div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">8 weeks comprehensive training</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Individual attention</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">5 mock tests</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Speaking practice sessions</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Score guarantee</span>
-                  </li>
-                </ul>
-                <Button className="w-full">Choose Premium</Button>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow duration-300">
-              <CardHeader className="text-center">
-                <Badge variant="outline" className="w-fit mx-auto mb-2">
-                  Intensive
-                </Badge>
-                <CardTitle className="text-2xl">Crash Course</CardTitle>
-                <CardDescription>Quick preparation</CardDescription>
-                <div className="text-3xl font-bold text-primary mt-4">NPR 20,000</div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">2 weeks intensive training</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Daily 3-hour sessions</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">3 mock tests</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4 text-secondary" />
-                    <span className="text-sm">Exam strategies focus</span>
-                  </li>
-                </ul>
-                <Button className="w-full">Choose Crash</Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
@@ -392,14 +271,7 @@ export default function IELTSPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Book Free Consultation
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <Link href="/contact">Download IELTS Guide</Link>
+             <Link href="/contact">Book Consultation</Link>
             </Button>
           </div>
         </div>

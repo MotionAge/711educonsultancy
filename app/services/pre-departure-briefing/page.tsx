@@ -1,5 +1,3 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -99,8 +97,6 @@ export default function PreDepartureBriefingPage() {
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -113,7 +109,7 @@ export default function PreDepartureBriefingPage() {
                 prepared for life in your new country with essential information, practical tips, and ongoing support.
               </p>
               <Button size="lg" className="text-lg px-8">
-                Book Your Briefing
+                <Link href="/contact"> Book Your Briefing</Link>
               </Button>
             </div>
             <div className="relative h-96">
@@ -232,14 +228,7 @@ export default function PreDepartureBriefingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8">
-              Schedule Briefing Session
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              <Link href="/contact">Get Departure Checklist</Link>
+              <Link href="/contact"> Book Your Briefing</Link>
             </Button>
           </div>
         </div>

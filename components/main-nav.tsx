@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import Image from "next/image"
 
 export function MainNav() {
   const [isOpen, setIsOpen] = useState(false)
@@ -36,7 +37,7 @@ export function MainNav() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
-            <div className="text-2xl font-bold text-primary">7 Eleven Education</div>
+              <Image src="logo.png" alt="Logo" width={150} height={150} />
           </Link>
 
           {/* Desktop Navigation */}

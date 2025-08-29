@@ -56,16 +56,18 @@ export function CountriesSection() {
         </div>
 
         {/* Airplane path design */}
-        <div className="flex justify-center mb-8">
+        {/* <div className="flex justify-center mb-8">
           <div className="relative">
-            <div className="w-64 h-1 bg-gradient-to-r from-primary via-secondary to-primary rounded-full"></div>
             <Plane className="absolute -top-2 left-1/2 transform -translate-x-1/2 h-6 w-6 text-secondary rotate-90" />
           </div>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {countries.map((country, index) => (
-            <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card
+              key={index}
+              className="bg-transparent border border-gray-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 rounded-xl"
+            >
               <CardHeader className="p-0">
                 <div className="relative h-48 w-full">
                   <Image

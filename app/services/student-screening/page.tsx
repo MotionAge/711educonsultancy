@@ -1,5 +1,3 @@
-import { TopNav } from "@/components/top-nav"
-import { MainNav } from "@/components/main-nav"
 import { Footer } from "@/components/footer"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -47,8 +45,6 @@ export default function StudentScreeningPage() {
 
   return (
     <div className="min-h-screen">
-      <TopNav />
-      <MainNav />
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
@@ -63,12 +59,12 @@ export default function StudentScreeningPage() {
                 personal preferences to match you with the perfect study destination and program.
               </p>
               <Button size="lg" className="text-lg px-8">
-                Book Your Screening
+              <Link href="/contact"> Book Your Screening</Link>
               </Button>
             </div>
             <div className="relative h-96">
               <Image
-                src="/student-counseling-session-with-advisor.png"
+                src="https://images.unsplash.com/photo-1646579885920-0c9a01cb7078?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Student screening consultation"
                 fill
                 className="object-cover rounded-lg"
@@ -140,9 +136,6 @@ export default function StudentScreeningPage() {
             service.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              Schedule Consultation
-            </Button>
             <Button
               size="lg"
               variant="outline"
