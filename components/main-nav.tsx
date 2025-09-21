@@ -29,7 +29,7 @@ export function MainNav() {
 
   const tests = [
     { name: "IELTS", href: "/tests/ielts" },
-    { name: "PTE", href: "/tests/pte" },
+    // { name: "PTE", href: "/tests/pte" },
   ]
 
   return (

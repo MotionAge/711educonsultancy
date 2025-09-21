@@ -16,14 +16,14 @@ const tests = [
     ],
     href: "/tests/ielts",
   },
-  {
-    icon: Award,
-    title: "PTE",
-    description:
-      "Pearson Test of English Academic - a computer-based English language test trusted by universities worldwide.",
-    features: ["Computer-based testing", "Quick results in 2 business days", "Unbiased automated scoring"],
-    href: "/tests/pte",
-  },
+  // {
+  //   icon: Award,
+  //   title: "PTE",
+  //   description:
+  //     "Pearson Test of English Academic - a computer-based English language test trusted by universities worldwide.",
+  //   features: ["Computer-based testing", "Quick results in 2 business days", "Unbiased automated scoring"],
+  //   href: "/tests/pte",
+  // },
 ]
 
 export function TestsSection() {
@@ -37,7 +37,7 @@ export function TestsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-4xl mx-auto">
           {tests.map((test, index) => {
             const Icon = test.icon
             return (

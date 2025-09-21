@@ -31,14 +31,14 @@ export default function NewZealandPage() {
     },
   ]
 
-  const topUniversities = [
-    { name: "University of Auckland", location: "Auckland", ranking: "#1" },
-    { name: "University of Otago", location: "Dunedin", ranking: "#2" },
-    { name: "Victoria University of Wellington", location: "Wellington", ranking: "#3" },
-    { name: "University of Canterbury", location: "Christchurch", ranking: "#4" },
-    { name: "Massey University", location: "Palmerston North", ranking: "#5" },
-    { name: "University of Waikato", location: "Hamilton", ranking: "#6" },
-  ]
+  // const topUniversities = [
+  //   { name: "University of Auckland", location: "Auckland", ranking: "#1" },
+  //   { name: "University of Otago", location: "Dunedin", ranking: "#2" },
+  //   { name: "Victoria University of Wellington", location: "Wellington", ranking: "#3" },
+  //   { name: "University of Canterbury", location: "Christchurch", ranking: "#4" },
+  //   { name: "Massey University", location: "Palmerston North", ranking: "#5" },
+  //   { name: "University of Waikato", location: "Hamilton", ranking: "#6" },
+  // ]
 
   const popularCourses = [
     "Agriculture & Forestry",
@@ -51,12 +51,12 @@ export default function NewZealandPage() {
     "Health Sciences",
   ]
 
-  const costs = [
-    { category: "Tuition (Undergraduate)", amount: "NZD 22,000 - 32,000/year" },
-    { category: "Tuition (Postgraduate)", amount: "NZD 26,000 - 37,000/year" },
-    { category: "Living Expenses", amount: "NZD 15,000 - 20,000/year" },
-    { category: "Health Insurance", amount: "NZD 500 - 800/year" },
-  ]
+  // const costs = [
+  //   { category: "Tuition (Undergraduate)", amount: "NZD 22,000 - 32,000/year" },
+  //   { category: "Tuition (Postgraduate)", amount: "NZD 26,000 - 37,000/year" },
+  //   { category: "Living Expenses", amount: "NZD 15,000 - 20,000/year" },
+  //   { category: "Health Insurance", amount: "NZD 500 - 800/year" },
+  // ]
 
   return (
     <div className="min-h-screen">
@@ -126,7 +126,7 @@ export default function NewZealandPage() {
       </section>
 
       {/* Top Universities */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Top Universities</h2>
@@ -155,7 +155,7 @@ export default function NewZealandPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Popular Courses */}
       <section className="py-16 bg-white">
@@ -180,7 +180,7 @@ export default function NewZealandPage() {
       </section>
 
       {/* Cost Information */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Cost of Education</h2>
@@ -203,7 +203,7 @@ export default function NewZealandPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Visa Requirements */}
       <section className="py-16 bg-white">

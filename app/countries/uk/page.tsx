@@ -31,14 +31,14 @@ export default function UKPage() {
     },
   ]
 
-  const topUniversities = [
-    { name: "University of Oxford", location: "Oxford", ranking: "#1" },
-    { name: "University of Cambridge", location: "Cambridge", ranking: "#2" },
-    { name: "Imperial College London", location: "London", ranking: "#3" },
-    { name: "London School of Economics", location: "London", ranking: "#4" },
-    { name: "University College London", location: "London", ranking: "#5" },
-    { name: "University of Edinburgh", location: "Edinburgh", ranking: "#6" },
-  ]
+  // const topUniversities = [
+  //   { name: "University of Oxford", location: "Oxford", ranking: "#1" },
+  //   { name: "University of Cambridge", location: "Cambridge", ranking: "#2" },
+  //   { name: "Imperial College London", location: "London", ranking: "#3" },
+  //   { name: "London School of Economics", location: "London", ranking: "#4" },
+  //   { name: "University College London", location: "London", ranking: "#5" },
+  //   { name: "University of Edinburgh", location: "Edinburgh", ranking: "#6" },
+  // ]
 
   const popularCourses = [
     "Business & Management",
@@ -51,12 +51,12 @@ export default function UKPage() {
     "International Relations",
   ]
 
-  const costs = [
-    { category: "Tuition (Undergraduate)", amount: "£15,000 - £25,000/year" },
-    { category: "Tuition (Postgraduate)", amount: "£16,000 - £30,000/year" },
-    { category: "Living Expenses", amount: "£12,000 - £15,000/year" },
-    { category: "Health Surcharge", amount: "£470/year" },
-  ]
+  // const costs = [
+  //   { category: "Tuition (Undergraduate)", amount: "£15,000 - £25,000/year" },
+  //   { category: "Tuition (Postgraduate)", amount: "£16,000 - £30,000/year" },
+  //   { category: "Living Expenses", amount: "£12,000 - £15,000/year" },
+  //   { category: "Health Surcharge", amount: "£470/year" },
+  // ]
 
   return (
     <div className="min-h-screen">
@@ -127,7 +127,7 @@ export default function UKPage() {
       </section>
 
       {/* Top Universities */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Top Universities</h2>
@@ -156,7 +156,7 @@ export default function UKPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Popular Courses */}
       <section className="py-16 bg-white">
@@ -181,7 +181,7 @@ export default function UKPage() {
       </section>
 
       {/* Cost Information */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Cost of Education</h2>
@@ -204,7 +204,7 @@ export default function UKPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Visa Requirements */}
       <section className="py-16 bg-white">

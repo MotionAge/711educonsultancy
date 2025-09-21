@@ -32,14 +32,14 @@ export default function USAPage() {
     },
   ]
 
-  const topUniversities = [
-    { name: "Harvard University", location: "Massachusetts", ranking: "#1" },
-    { name: "Stanford University", location: "California", ranking: "#2" },
-    { name: "MIT", location: "Massachusetts", ranking: "#3" },
-    { name: "University of California, Berkeley", location: "California", ranking: "#4" },
-    { name: "Yale University", location: "Connecticut", ranking: "#5" },
-    { name: "Princeton University", location: "New Jersey", ranking: "#6" },
-  ]
+  // const topUniversities = [
+  //   { name: "Harvard University", location: "Massachusetts", ranking: "#1" },
+  //   { name: "Stanford University", location: "California", ranking: "#2" },
+  //   { name: "MIT", location: "Massachusetts", ranking: "#3" },
+  //   { name: "University of California, Berkeley", location: "California", ranking: "#4" },
+  //   { name: "Yale University", location: "Connecticut", ranking: "#5" },
+  //   { name: "Princeton University", location: "New Jersey", ranking: "#6" },
+  // ]
 
   const popularCourses = [
     "Computer Science & Engineering",
@@ -52,12 +52,12 @@ export default function USAPage() {
     "International Relations",
   ]
 
-  const costs = [
-    { category: "Tuition (Public Universities)", amount: "$25,000 - $35,000/year" },
-    { category: "Tuition (Private Universities)", amount: "$35,000 - $60,000/year" },
-    { category: "Living Expenses", amount: "$12,000 - $18,000/year" },
-    { category: "Health Insurance", amount: "$1,500 - $3,000/year" },
-  ]
+  // const costs = [
+  //   { category: "Tuition (Public Universities)", amount: "$25,000 - $35,000/year" },
+  //   { category: "Tuition (Private Universities)", amount: "$35,000 - $60,000/year" },
+  //   { category: "Living Expenses", amount: "$12,000 - $18,000/year" },
+  //   { category: "Health Insurance", amount: "$1,500 - $3,000/year" },
+  // ]
 
   return (
     <div className="min-h-screen">
@@ -129,7 +129,7 @@ export default function USAPage() {
       </section>
 
       {/* Top Universities */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Top Universities</h2>
@@ -158,7 +158,7 @@ export default function USAPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Popular Courses */}
       <section className="py-16 bg-white">
@@ -183,7 +183,7 @@ export default function USAPage() {
       </section>
 
       {/* Cost Information */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Cost of Education</h2>
@@ -206,7 +206,7 @@ export default function USAPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Visa Requirements */}
       <section className="py-16 bg-white">

@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Plane } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -9,31 +8,31 @@ const countries = [
     name: "USA",
     description: "World-class universities and diverse academic programs",
     image: "/usa-flag-with-university-buildings.png",
-    href: "/study-abroad/usa",
+    href: "/countries/usa",
   },
   {
     name: "UK",
     description: "Historic institutions and cutting-edge research opportunities",
     image: "/uk-flag-with-oxford-cambridge-universities.png",
-    href: "/study-abroad/uk",
+    href: "/countries/uk",
   },
   {
     name: "Canada",
     description: "Affordable education with excellent post-study work opportunities",
     image: "/canada-flag-with-modern-university-campus.png",
-    href: "/study-abroad/canada",
+    href: "/countries/canada",
   },
   {
     name: "Australia",
     description: "High-quality education in a multicultural environment",
     image: "/australia-flag-with-sydney-university.png",
-    href: "/study-abroad/australia",
+    href: "/countries/australia",
   },
   {
     name: "New Zealand",
     description: "Innovative programs in stunning natural surroundings",
     image: "/new-zealand-flag-with-university-campus-mountains.png",
-    href: "/study-abroad/new-zealand",
+    href: "/countries/new-zealand",
   },
 ]
 

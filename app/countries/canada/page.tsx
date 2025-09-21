@@ -30,14 +30,14 @@ export default function CanadaPage() {
     },
   ]
 
-  const topUniversities = [
-    { name: "University of Toronto", location: "Ontario", ranking: "#1" },
-    { name: "University of British Columbia", location: "British Columbia", ranking: "#2" },
-    { name: "McGill University", location: "Quebec", ranking: "#3" },
-    { name: "University of Alberta", location: "Alberta", ranking: "#4" },
-    { name: "McMaster University", location: "Ontario", ranking: "#5" },
-    { name: "University of Waterloo", location: "Ontario", ranking: "#6" },
-  ]
+  // const topUniversities = [
+  //   { name: "University of Toronto", location: "Ontario", ranking: "#1" },
+  //   { name: "University of British Columbia", location: "British Columbia", ranking: "#2" },
+  //   { name: "McGill University", location: "Quebec", ranking: "#3" },
+  //   { name: "University of Alberta", location: "Alberta", ranking: "#4" },
+  //   { name: "McMaster University", location: "Ontario", ranking: "#5" },
+  //   { name: "University of Waterloo", location: "Ontario", ranking: "#6" },
+  // ]
 
   const popularCourses = [
     "Computer Science & IT",
@@ -50,12 +50,12 @@ export default function CanadaPage() {
     "Applied Sciences",
   ]
 
-  const costs = [
-    { category: "Tuition (Undergraduate)", amount: "CAD 20,000 - 30,000/year" },
-    { category: "Tuition (Postgraduate)", amount: "CAD 25,000 - 40,000/year" },
-    { category: "Living Expenses", amount: "CAD 12,000 - 18,000/year" },
-    { category: "Health Insurance", amount: "CAD 600 - 1,200/year" },
-  ]
+  // const costs = [
+  //   { category: "Tuition (Undergraduate)", amount: "CAD 20,000 - 30,000/year" },
+  //   { category: "Tuition (Postgraduate)", amount: "CAD 25,000 - 40,000/year" },
+  //   { category: "Living Expenses", amount: "CAD 12,000 - 18,000/year" },
+  //   { category: "Health Insurance", amount: "CAD 600 - 1,200/year" },
+  // ]
 
   return (
     <div className="min-h-screen">
@@ -126,7 +126,7 @@ export default function CanadaPage() {
       </section>
 
       {/* Top Universities */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Top Universities</h2>
@@ -155,7 +155,7 @@ export default function CanadaPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Popular Courses */}
       <section className="py-16 bg-white">
@@ -180,7 +180,7 @@ export default function CanadaPage() {
       </section>
 
       {/* Cost Information */}
-      <section className="py-16 bg-muted/30">
+      {/* <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-balance">Cost of Education</h2>
@@ -203,7 +203,7 @@ export default function CanadaPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Visa Requirements */}
       <section className="py-16 bg-white">
