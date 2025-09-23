@@ -137,12 +137,21 @@ const blogPosts = {
     tags: ["IELTS", "PTE", "English Test", "Test Preparation"],
   },
 }
+// This function generates static paths for all the blog posts
+export function generateStaticParams() {
+  // Generate the dynamic slugs based on blogPosts keys
+  return Object.keys(blogPosts).map((slug) => ({
+    slug,
+  }));
+}
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = blogPosts[params.slug as keyof typeof blogPosts]
+  // Get the post based on the slug parameter
+  const post = blogPosts[params.slug as keyof typeof blogPosts];
 
+  // If the post does not exist, show a 404 page
   if (!post) {
-    notFound()
+    notFound();
   }
 
   // const relatedPosts = [
