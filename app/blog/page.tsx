@@ -44,7 +44,7 @@ export default function BlogPage() {
     //   image: "/student-visa-application-process.png",
     // },
     {
-      id: "scholarship-opportunities-2025",
+      id: "/scholarship-opportunities-nepali-students",
       title: "Top Scholarship Opportunities for Nepali Students in 2025",
       excerpt:
         "Discover the best scholarship programs available for Nepali students planning to study abroad this year.",
@@ -55,7 +55,7 @@ export default function BlogPage() {
       image: "/graduation-cap-with-scholarship-certificate.png",
     },
     {
-      id: "canada-study-permit-guide",
+      id: "#",
       title: "Canada Study Permit: Step-by-Step Application Guide",
       excerpt:
         "Everything you need to know about applying for a Canadian study permit, including required documents and processing times.",

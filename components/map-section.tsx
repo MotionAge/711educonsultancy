@@ -9,7 +9,7 @@ export function MapSection() {
 
         <div className="rounded-lg overflow-hidden shadow-lg">
          <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2270.817987737209!2d85.4234268346936!3d27.665429333518638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1aa658380e9b%3A0xf3f6e9f47ac0905a!2sSuryabinayak%20Bus%20Station!5e1!3m2!1sen!2snp!4v1755843091356!5m2!1sen!2snp"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.6763904070826!2d85.42164637521596!3d27.665482227337122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bf0f2465f77%3A0x6056d572cf334ca6!2sSeven%20Eleven%20Education%20Consultancy!5e0!3m2!1sen!2snp!4v1758882030919!5m2!1sen!2snp"
               width="100%"
               height="500"
               style={{ border: 0 }}

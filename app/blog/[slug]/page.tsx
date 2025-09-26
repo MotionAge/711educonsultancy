@@ -136,6 +136,66 @@ const blogPosts = {
     image: "/students-taking-english-proficiency-test.png",
     tags: ["IELTS", "PTE", "English Test", "Test Preparation"],
   },
+  "scholarship-opportunities-nepali-students": {
+  title: "Scholarship Opportunities for Nepali Students: Study Abroad Funding Guide",
+  excerpt:
+    "Explore various scholarships available for Nepali students planning to study abroad, including government-funded, university-specific, and international programs.",
+  content: `
+    <p>Studying abroad can be a life-changing experience, but the cost can often be a major hurdle. Fortunately, there are many scholarship opportunities available for Nepali students that can ease the financial burden and help you pursue your academic goals internationally.</p>
+
+    <h2>Types of Scholarships Available</h2>
+
+    <h3>1. Government-Funded Scholarships</h3>
+    <ul>
+      <li><strong>Australian Awards Scholarships:</strong> Funded by the Australian government, these scholarships support students from developing countries, including Nepal, to study in Australia.</li>
+      <li><strong>Fulbright Program (USA):</strong> Offers fully funded scholarships for graduate studies in the United States for outstanding Nepali students.</li>
+      <li><strong>Chevening Scholarships (UK):</strong> The UK government’s global scholarship program for future leaders from around the world, including Nepal.</li>
+      <li><strong>DAAD Scholarships (Germany):</strong> Provides scholarships for postgraduate studies in Germany for students from developing countries.</li>
+    </ul>
+
+    <h3>2. University-Specific Scholarships</h3>
+    <ul>
+      <li><strong>University of Melbourne International Scholarships (Australia)</strong></li>
+      <li><strong>Oxford University Reach Scholarships (UK)</strong></li>
+      <li><strong>Harvard University Scholarships (USA)</strong></li>
+      <li><strong>Erasmus Mundus Joint Master Degrees (EU):</strong> A fully funded program that offers scholarships for international students to study in multiple European universities.</li>
+    </ul>
+
+    <h3>3. Private and NGO Scholarships</h3>
+    <ul>
+      <li><strong>UWC Scholarships:</strong> Offers full or partial scholarships to study the International Baccalaureate (IB) in United World Colleges worldwide.</li>
+      <li><strong>Asian Development Bank - Japan Scholarship Program:</strong> For postgraduate students from ADB’s member countries, including Nepal.</li>
+      <li><strong>Vidyadhan Scholarship (SDF):</strong> A program for talented students from underprivileged backgrounds in South Asia.</li>
+    </ul>
+
+    <h2>How to Apply</h2>
+    <p>Most scholarships require a strong academic background, a statement of purpose, recommendation letters, and in many cases, proof of financial need. Make sure to:</p>
+    <ul>
+      <li>Start your research early (at least a year in advance)</li>
+      <li>Meet the eligibility requirements</li>
+      <li>Prepare all necessary documents on time</li>
+      <li>Apply to multiple scholarships to improve your chances</li>
+    </ul>
+
+    <h2>Tips for Nepali Students</h2>
+    <ul>
+      <li>Stay updated through official embassy and scholarship websites</li>
+      <li>Join local educational consultancies or student forums for guidance</li>
+      <li>Attend webinars or education fairs held in Kathmandu or online</li>
+      <li>Prepare well for English proficiency tests like IELTS, TOEFL, or PTE, as these are often required</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>With the right planning and effort, scholarships can make studying abroad accessible and affordable for Nepali students. Explore every opportunity, meet deadlines, and present your best self in your applications. Your dream of studying abroad is within reach!</p>
+  `,
+  author: "Priya Thapa",
+  date: "2025-01-05",
+  readTime: "9 min read",
+  category: "Scholarships & Funding",
+  image: "/graduation-cap-with-scholarship-certificate.png",
+  tags: ["Scholarships", "Nepali Students", "Study Abroad", "Funding Opportunities"],
+},
+
 }
 // This function generates static paths for all the blog posts
 export function generateStaticParams() {

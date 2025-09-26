@@ -26,7 +26,7 @@ const blogPosts = [
     description: "Explore various scholarship programs available for Nepali students planning to study abroad.",
     image: "/graduation-cap-with-scholarship-certificate.png",
     date: "2025-01-05",
-    href: "/blog/scholarships-nepali-students",
+    href: "/blog/scholarship-opportunities-nepali-students",
   },
 ]
 
