@@ -31,11 +31,11 @@ export function ContactSection() {
     e.preventDefault()
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      })
+      const res = await fetch("/contact.php", {
+  method: "POST",
+  body: new URLSearchParams(formData),
+});
+
 
       if (!res.ok) throw new Error("Failed to send message")
 
