@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/select";
 
 export function ContactSection() {
-    const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
@@ -27,11 +27,32 @@ export function ContactSection() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    alert("Thank you for your inquiry! We will contact you within 24 hours.");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      if (!res.ok) throw new Error("Failed to send message")
+
+      alert("Thank you for your inquiry! We will contact you within 24 hours.")
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        destination: "",
+        course: "",
+        message: "",
+      })
+    } catch (error) {
+      console.error("Submission error:", error)
+      alert("There was a problem sending your message. Please try again later.")
+    }
   }
 
   const handleChange = (
@@ -39,19 +60,18 @@ export function ContactSection() {
     value?: string
   ) => {
     if (typeof e === "string" && value !== undefined) {
-      // Manual key/value update (e.g., for Select)
       setFormData((prev) => ({
         ...prev,
         [e]: value,
       }))
     } else if (typeof e !== "string") {
-      // Normal input/textarea change
       setFormData((prev) => ({
         ...prev,
         [e.target.name]: e.target.value,
       }))
     }
   }
+
 
 
   return (
@@ -218,7 +238,7 @@ export function ContactSection() {
           <div>
             <h3 className="font-semibold mb-2">Email Address</h3>
             <p className="text-muted-foreground">
-              info.seveneleveneduconsultancy@gmail.com
+              info@7eleveneduconsultancy.com
             </p>
           </div>
         </div>
